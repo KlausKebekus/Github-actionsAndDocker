@@ -21,7 +21,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: build an image
         run:
-          docker build -t githubactionsWithDocker:v1 .
+          docker build -t githubactionsWithDocker:v1 ../../
       - name: run a container
         run: 
           docker run -d -p 8080:80 githubactionsWithDocker:v1 --name myTry
