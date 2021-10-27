@@ -22,7 +22,7 @@ jobs:
       - name: build an image
         run: |
           cd ../../
-          docker build -t githubactions_with_docker:v1 ../../
+          docker build -t githubactions_with_docker:v1
       - name: run a container
         run: 
           docker run -d -p 8080:80 githubactions_with_docker:v1 --name myTry
