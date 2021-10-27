@@ -24,4 +24,4 @@ jobs:
           docker build -t githubactions_with_docker:v1 ../../
       - name: run a container
         run: 
-          docker run -d -p 8080:80 githubactionsWithDocker:v1 --name myTry
+          docker run -d -p 8080:80 githubactions_with_docker:v1 --name myTry
